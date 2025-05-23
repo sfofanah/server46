@@ -139,6 +139,47 @@ header{
     filter: brightness(0.5);
 }
 
+/*Video Section*/
+.video-section{
+    background-color: #ffffff;
+    padding: 60px 20px;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 1.5s ease 0.4s, transform 1.5s ease 0.4s;
+}
+
+.video-section.reveal{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.video-section h2{
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+
+.video-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+.video-card iframe{
+    width: 500px;
+    height: 400px;
+    border: 8px solid #000000;
+    border-radius: 20px;
+}
+
+.video-card iframe:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
 /* Top Players Carousel*/
 .top_players_section{
     background-color: black;
@@ -238,45 +279,104 @@ header{
   background: linear-gradient(to left, black, transparent);
 }
 
-/*Video Section*/
-.video-section{
-    background-color: #ffffff;
-    padding: 60px 20px;
-    opacity: 0;
-    transform: translateY(10px);
-    transition: opacity 1.5s ease 0.4s, transform 1.5s ease 0.4s;
+/* === HERO SECTION (WHITE BACKGROUND) === */
+.hero {
+  background-color: white;
+  color: #111;
+  text-align: center;
+  padding: 100px 20px;
 }
 
-.video-section.reveal{
-    opacity: 1;
-    transform: translateY(0);
+.hero-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex; /*puts the logo and text side by side*/
+  align-items: center;
+  justify-content: center; /*centers both logo and text*/
+  gap: 40px;
+  flex-wrap: wrap; /* ensures it stacks on smaller screens */
+  text-align: left;
 }
 
-.video-section h2{
-    text-align: center;
-    margin-bottom: 50px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 2.8rem;
-    font-weight: bold;
+.hero-logo {
+  width: 200px;
+  height: auto;
 }
 
-.video-container{
-    display: flex;
-    flex-wrap: wrap;
+.hero-heading {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #d4af37; /* Gold from your branding */
+}
+
+/* === FOOTER === */
+footer{
+  background-color: #000000;
+  color: white;
+  padding: 25px 0;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.footer-content{
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-content p{
+  margin: 10px 0;
+  font-size: 0.9rem;
+  border-bottom: 1px solid #bbbbbb87;
+  
+}
+
+.socials{
+ margin-top: 10px;
+}
+
+.socials a{
+  margin: 0 10px; /*Adds space between both logos*/
+  display: inline-block;
+  transition: opacity 0.3s ease;
+}
+
+.socials img{
+  width: 24px;
+  height: 24px;
+}
+
+.socials a:hover {
+  opacity: 0.6;
+}
+
+ /* Styles for tablets and phones */
+@media (max-width: 768px) {
+  
+    nav .nav-flexbox {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .clans {
+    flex-direction: row;
+    gap: 20px;
     justify-content: center;
-    gap: 50px;
-}
+    flex-wrap: wrap;
+    font-size: 1rem;
+  }
 
-.video-card iframe{
-    width: 500px;
-    height: 400px;
-    border: 8px solid #000000;
-    border-radius: 20px;
-}
+  .top_players_section h2,.video-section h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
 
-.video-card iframe:hover{
-    transform: scale(1.1);
-    box-shadow: 0 0 20px rgba(0,0,0,0.5);
-}
+  .welcome-text h1 {
+    font-size: 2rem;
+  }
 
+  .welcome-text p {
+    font-size: 1.2rem;
+  }
+}
 
