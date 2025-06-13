@@ -66,3 +66,4 @@ document.getElementById('Relocations-container').addEventListener('submit', func
     console.log("Combat Power:", power);
     console.log("Player Type:", playerType);
   });
+  
