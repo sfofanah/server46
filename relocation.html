@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+</html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Server 46 - Relocations | The Walking Dead Survivors (TWDS)</title>
+    <link rel="stylesheet" href="relo.css">
+    <meta name="description" content="The best guide on TWD Survivors! Welcome to our Server where you'll learn everything about our players and the game!" />
+
+</head>
+
+<body>
+    <!--Main Body Section-->
+    <main class="relocation-wrapper">
+        <!--Relocations-->
+        <section>
+            <div class="relocation-card">
+                <h2>Relocations - Join Server 46!</h2>
+                <form id="Relocations-container">
+                    <label for="name">In-Game Name:</label>
+                    <div class="input-icon-group">
+                        <span class="icon">🎮</span>
+                        <input type="text" id="name" name="name" placeholder="Name" required>
+                    </div>
+
+                    <label for="duels">Duel Points:</label>
+                    <div class="input-icon-group">
+                        <span class="icon">⚔️</span>
+                        <input type="number" id="duels" name="duels" placeholder="Duels" required>
+                    </div>
+
+                    <label for="power">Combat Power:</label>
+                    <div class="input-icon-group">
+                        <span class="icon">🛡️</span>
+                        <input type="number" id="power" name="power" placeholder="Power" required>
+                    </div>
+
+                    <label for="kills">Kills:</label>
+                    <div class="input-icon-group">
+                        <span class="icon">💀</span>
+                        <input type="number" id="kills" name="kills" placeholder="Kills" required>
+                    </div>
+
+                    <label for="losses">Losses:</label>
+                    <div class="input-icon-group">
+                        <span class="icon">🩸</span>
+                        <input type="number" id="losses" name="losses" placeholder="Losses" required>
+                    </div>
+
+                    <label for="pvp-wins">PvP Wins:</label>
+                    <div class="input-icon-group">
+                        <span class="icon">🏆</span>
+                        <input type="number" id="pvp-wins" name="pvp-wins" placeholder="PvP Wins" required>
+                    </div>
+
+                    <label for="pvp-losses">PvP Losses:</label>
+                    <div class="input-icon-group">
+                        <span class="icon">📉</span>
+                        <input type="number" id="pvp-losses" name="pvp-losses" placeholder="PvP Losses" required>
+                    </div>
+
+                    <label for="help-amount">Help Amount:</label>
+                    <div class="input-icon-group">
+                        <span class="icon">🆘</span>
+                        <input type="number" id="help-amount" name="help-amount" placeholder="Help Amount" required>
+                    </div>
+
+                    <!--Groups Related Inputs-->
+                    <fieldset class="radio-group">
+                        <legend>Player Type:</legend>
+
+                        <label class="radio-option">
+                            <input type="radio" name="playerType" value="Whale" required>
+                            Whale
+                        </label>
+
+                        <label class="radio-option">
+                            <input type="radio" name="playerType" value="F2P">
+                            F2P
+                        </label>
+
+                        <label class="radio-option">
+                            <input type="radio" name="playerType" value="Dolphin">
+                            Dolphin
+                        </label>
+                    </fieldset>
+
+                    <button type="submit">Request Transfer</button>
+
+                </form>
+
+                <div id="success-message" class="success-msg hidden">
+                ✅ Transfer request submitted successfully!
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/10.12.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.1/firebase-firestore-compat.js"></script>
+
+    <script>
+    // Your Firebase config (replace with your real values)
+    const firebaseConfig = {
+        apiKey: "AIzaSyCwKTKNKkYhxGvcYVrxKJKtOrsEz44G-sA",
+        authDomain: "server46-relocations.firebaseapp.com",
+        projectId: "server46-relocations",
+        storageBucket: "server46-relocations.firebasestorage.app",
+        messagingSenderId: "773947390230",
+        appId: "1:773947390230:web:9ce52c91b5697437bbf837"
+    };
+
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore();
+
+    </script>
+
+    <script>
+    document.getElementById("Relocations-container").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    // Get form values
+    const name = document.getElementById("name").value;
+    const duels = document.getElementById("duels").value;
+    const power = document.getElementById("power").value;
+    const kills = document.getElementById("kills").value;
+    const losses = document.getElementById("losses").value;
+    const pvpWins = document.getElementById("pvp-wins").value;
+    const pvpLosses = document.getElementById("pvp-losses").value;
+    const helpAmount = document.getElementById("help-amount").value;
+    const playerType = document.querySelector('input[name="playerType"]:checked').value;
+
+    // Save to Firestore
+    db.collection("relocationRequests").add({
+      name,
+      duels,
+      power,
+      kills,
+      losses,
+      pvpWins,
+      pvpLosses,
+      helpAmount,
+      playerType,
+      timestamp: firebase.firestore.FieldValue.serverTimestamp()
+    })
+    
+    .then(() => {
+        document.getElementById("Relocations-container").reset();
+        const msg = document.getElementById("success-message");
+        msg.classList.add("show");
+
+        setTimeout(() => {
+            msg.classList.remove("show");
+        }, 5000);
+
+        setTimeout(() => {
+        window.location.href = "./index.html"; // or "/" if hosted at root
+        }, 6000); // 6 seconds (1 sec after message fades out)
+     })
+
+    .catch((error) => {
+      console.error("Error writing document: ", error);
+      alert("Something went wrong. Please try again.");
+    });
+  });
+    </script>
+
+</body>

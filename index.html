@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Server 46 | The Walking Dead Survivors (TWDS)</title>
     <link rel="stylesheet" href="s46.css">
+    <meta name="description" content="The best guide on TWD Survivors! Welcome to our Server where you'll learn everything about our players and the game!" />
 
 </head>
+
+<!--Wrap your header within your main! First find out if that's the correct structure or not!-->
 <body>
     <!--Header Section-->
     <header>
@@ -20,16 +23,25 @@
                 </a>
             </div>
 
-            <!--Second div on the right to hold clans-->
-            <ul class="clans">
-                <li><a href="cbz.html">CBZ</a></li>
-                <li><a href="cls.html">CLS</a></li>
-                <li><a href="bear.html">BEAR</a></li>
-                <li><a href="wolf.html">WOLF</a></li>
-                <li><a href="tlr.html">TLR</a></li>
+            <!-- Hamburger Button -->
+            <button class="hamburger" id="hamburger">&#9776;</button>
+
+            <!-- Navigation Links -->
+            <ul class="clans" id="nav-links">
+                <li class="dropdown">
+                <a href="clans.html">Clans ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="cbz.html">CBZ</a></li>
+                    <li><a href="cls.html">CLS</a></li>
+                    <li><a href="bear.html">BEAR</a></li>
+                    <li><a href="wolf.html">WOLF</a></li>
+                    <li><a href="tlr.html">TLR</a></li>
+                    <!-- Add more clans as needed -->
+                </ul>
+                </li>
+                <li><a href="relocation.html">Relocation</a></li>
+                <li><a href="leaders.html">Leaders</a></li>
             </ul>
-
-
         </div>
     </header>
     
@@ -224,5 +236,26 @@
 
     <!--Javascript for carousel slider-->
     <script src="script.js" defer></script>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+        });
+
+        // Mobile dropdown toggle for "Clans"
+        const dropdown = document.querySelector('.dropdown > a');
+        const dropdownParent = document.querySelector('.dropdown');
+
+        dropdown.addEventListener('click', (e) => {
+        if (window.innerWidth <= 768) {
+            e.preventDefault(); // prevent link jump
+            dropdownParent.classList.toggle('show');
+        }
+        });
+
+    </script>
 
 </body>

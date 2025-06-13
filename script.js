@@ -50,5 +50,19 @@ function revealOnScroll() {
     window.removeEventListener('scroll', revealOnScroll); // run only once
   }
 }
-
 window.addEventListener('scroll', revealOnScroll);
+
+document.getElementById('Relocations-container').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevents the page from reloading
+
+    const name = document.getElementById('name').value;
+    const duels = document.getElementById('duels').value;
+    const power = document.getElementById('power').value;
+    const playerType = document.querySelector('input[name="playerType"]:checked').value;
+
+    console.log("Submitted Data:");
+    console.log("In-Game Name:", name);
+    console.log("Duels Points:", duels);
+    console.log("Combat Power:", power);
+    console.log("Player Type:", playerType);
+  });
