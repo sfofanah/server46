@@ -39,3 +39,11 @@ body{
 }
 
 /*-------------------------------------------------------------*/
+
+/* TWDS Introduction Section */
+.h1-style{
+  
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+  letter-spacing: 1px;
+}
