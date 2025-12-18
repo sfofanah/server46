@@ -10,6 +10,22 @@ body{
 }
 
 /*-------------------------------------------------------------*/
+/* Section Background Colors */
+.dark-section{
+  background-color: #000000;
+  color: white;
+}
+
+.light-section{
+  background-color: #FFFFFF;
+  color: black;
+}
+
+.dark-section, .light-section{
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/*-------------------------------------------------------------*/
 /* Navigation background */
 .navbar{
   background-color: #000000;
@@ -39,7 +55,6 @@ body{
 }
 
 /*-------------------------------------------------------------*/
-
 /* TWDS Introduction Section */
 .h1-style{
   
