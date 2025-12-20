@@ -1,14 +1,19 @@
-/*Body*/
-body{
-    margin: 0;
-    padding: 0;
-    background-color: black;
-}
-
 /*-------------------------------------------------------------*/
-/* Pre-defining CSS Color of our Logo */
+/* Pre-defining CSS */
 :root {
   --logo-accent: #C7AE6A;
+}
+
+@font-face {
+  font-family: myFont;
+  src: url(Fonts/montserrat-font/MontserratBlack-3zOvZ.ttf);
+}
+/*-------------------------------------------------------------*/
+/*Body*/
+body{
+  margin: 0;
+  padding: 0;
+  background-color: black;
 }
 
 /*-------------------------------------------------------------*/
@@ -35,9 +40,9 @@ body{
 
 /* styling the nav link items */
 .navbar .nav-link{
-  font-size: 1.2rem;
-  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.5rem;
   font-weight: 700;
+  font-family: myFont;
   letter-spacing: 0.5px;
   color: white;
   transition: color 0.2s ease, text-decoration-color 0.2s ease;
@@ -47,13 +52,11 @@ body{
 .navbar .nav-link:hover,
 .navbar .nav-link:focus {
   color: var(--logo-accent);
-  text-decoration: underline;
-  text-underline-offset: 6px;
+ 
 }
 
 .navbar .nav-link.active {
   color: var(--logo-accent);
-  text-decoration: underline;
 }
 
 /*-------------------------------------------------------------*/
