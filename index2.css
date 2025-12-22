@@ -74,6 +74,12 @@ body{
 
 .card-link:hover .left-column{
   transform: scale(1.05);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.left-column img{
+  border-radius: 5px;
 }
 
 .underline{
