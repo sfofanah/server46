@@ -63,7 +63,13 @@ body{
 /* Featured Update Section */
 .container-edit{
   background-color: #3b3b3b67;
-border-radius: 20px;
+  border-radius: 20px;
+}
+
+.card-link{
+  display: block;
+  text-decoration: none;
+  color: inherit;
 }
 
 .underline{
