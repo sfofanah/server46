@@ -72,14 +72,19 @@ body{
   color: inherit;
 }
 
+.card-link .left-column{
+  overflow: hidden;
+  transition: transform 0.4s ease;
+}
+
 .card-link:hover .left-column{
   transform: scale(1.05);
   overflow: hidden;
-  transition: transform 0.3s ease;
 }
 
 .left-column img{
   border-radius: 5px;
+
 }
 
 .underline{
