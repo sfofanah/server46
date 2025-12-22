@@ -72,6 +72,10 @@ body{
   color: inherit;
 }
 
+.card-link:hover .left-column{
+  transform: scale(1.05);
+}
+
 .underline{
   display: block;
   height: 8px;
