@@ -8,6 +8,11 @@
   font-family: myFont;
   src: url(Fonts/montserrat-font/MontserratBlack-3zOvZ.ttf);
 }
+
+@font-face {
+  font-family: myFont2;
+  src: url(Fonts/montserrat-font/MontserratExtralight-jEZ6j.ttf);
+}
 /*-------------------------------------------------------------*/
 /*Body*/
 body{
@@ -79,12 +84,15 @@ body{
 
 .card-link:hover .left-column{
   transform: scale(1.05);
-  overflow: hidden;
+}
+
+.card-link:hover .right-column .featured-update-h2{
+  color: var(--logo-accent);
 }
 
 .left-column img{
+  overflow: hidden;
   border-radius: 5px;
-
 }
 
 .underline{
@@ -95,10 +103,10 @@ body{
   margin: 12px 0 20px;
 }
 
-.featured-update-heading{
+.featured-update-h2{
   font-family: myFont;
 }
 
-.featured-update-text{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.featured-update-paragraph{
+  font-family: myFont2;
 }
