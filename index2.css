@@ -82,8 +82,8 @@ body{
   transition: transform 0.4s ease;
 }
 
-.card-link:hover .left-column{
-  transform: scale(1.05);
+.card-link:hover .left-column img{
+  transform: scale(1);
 }
 
 .card-link:hover .right-column .featured-update-h2{
@@ -91,10 +91,19 @@ body{
 }
 
 .left-column img{
-  overflow: hidden;
-  border-radius: 5px;
-  border: solid 2px var(--logo-accent);
+  display: block;
+  width: 100%;
+  height: auto;
+  transform: scale(1.08);          
+  transition: transform 0.4s ease; 
 }
+
+.image-border{
+  border: 2px solid var(--logo-accent);
+  border-radius: 8px;
+  overflow: hidden;                
+}
+
 
 .underline{
   display: block;
