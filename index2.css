@@ -93,6 +93,7 @@ body{
 .left-column img{
   overflow: hidden;
   border-radius: 5px;
+  border: solid 2px var(--logo-accent);
 }
 
 .underline{
