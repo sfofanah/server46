@@ -82,6 +82,8 @@ body{
   text-decoration: none;
   color: inherit;
   border: solid 2px var(--logo-accent);
+  border-radius: 12px;
+  overflow: hidden;
 }
 
 .card-link .left-column{
