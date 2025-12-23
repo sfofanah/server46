@@ -73,15 +73,15 @@ body{
 }
 
 .container-edit{
-  background-color: #3b3b3b67;
+  background-color: black;
   border-radius: 20px;
 }
 
 .card-link{
+  background-color: #3b3b3b67;
   display: block;
   text-decoration: none;
   color: inherit;
-  border: solid 2px var(--logo-accent);
   border-radius: 12px;
   overflow: hidden;
 }
@@ -108,7 +108,7 @@ body{
 }
 
 .image-border{
-
+  border: 2px solid var(--logo-accent);
   border-radius: 8px;
   overflow: hidden;                
 }
