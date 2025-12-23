@@ -66,7 +66,7 @@ body{
 
 /*-------------------------------------------------------------*/
 /* Featured Update Section */
-.parant-of-all-cards{
+.parent-of-all-cards{
   display: flex;
   flex-direction: column;
   gap: 30px;
