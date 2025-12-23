@@ -66,6 +66,12 @@ body{
 
 /*-------------------------------------------------------------*/
 /* Featured Update Section */
+.parant-of-all-cards{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
 .container-edit{
   background-color: #3b3b3b67;
   border-radius: 20px;
