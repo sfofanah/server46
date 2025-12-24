@@ -138,3 +138,9 @@ body{
   justify-self: center;
   gap: 15px;
 }
+
+.footer-edit p{
+  font-family: myFont2;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
