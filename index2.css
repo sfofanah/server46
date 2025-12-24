@@ -129,3 +129,12 @@ body{
 .featured-update-paragraph{
   font-family: myFont2;
 }
+
+/*-------------------------------------------------------------*/
+/* Footer Section */
+.footer-edit{
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  gap: 15px;
+}
