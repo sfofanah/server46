@@ -78,7 +78,7 @@ body{
 }
 
 .card-link{
-  background-color: #3b3b3b67;
+  background-color: #2f2f2f;
   display: block;
   text-decoration: none;
   color: inherit;
@@ -148,7 +148,7 @@ body{
 /*-------------------------------------------------------------*/
 /* Clans - Container section */
 .clan-container{
-  background-color: #3b3b3b67;
+  background-color: #2f2f2f;
   border-radius: 15px;
   padding: 40px;
 }
