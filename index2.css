@@ -155,7 +155,13 @@ body{
 }
 
 .clan-title{
-  font-family: myFont;
   margin-bottom: 20px;
   text-align: center;
+}
+
+.clan-title h1{
+  font-family: myFont;
+  color: white;
+  font-size: 2rem;
+  text-shadow: #000000 2px 2px 4px;
 }
