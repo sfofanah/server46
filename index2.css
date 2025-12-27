@@ -14,7 +14,7 @@
   src: url(Fonts/montserrat-font/MontserratExtralight-jEZ6j.ttf);
 }
 /*-------------------------------------------------------------*/
-/*Body*/
+/* Home -Body*/
 body{
   margin: 0;
   padding: 0;
@@ -22,7 +22,7 @@ body{
 }
 
 /*-------------------------------------------------------------*/
-/* Section Background Colors */
+/* Home - Section Background Colors */
 .dark-section{
   background-color: #000000;
   color: white;
@@ -38,7 +38,7 @@ body{
 }
 
 /*-------------------------------------------------------------*/
-/* Navigation background */
+/* Home - Navigation background */
 .navbar{
   background-color: #000000;
 }
@@ -65,7 +65,7 @@ body{
 }
 
 /*-------------------------------------------------------------*/
-/* Featured Update Section */
+/* Home - Featured Update Section */
 .parent-of-all-cards{
   display: flex;
   flex-direction: column;
@@ -131,7 +131,7 @@ body{
 }
 
 /*-------------------------------------------------------------*/
-/* Footer Section */
+/* Home - Footer Section */
 .footer-edit{
   display: flex;
   align-items: center;
@@ -143,4 +143,11 @@ body{
   font-family: myFont2;
   font-size: 0.9rem;
   opacity: 0.8;
+}
+
+/*-------------------------------------------------------------*/
+/* Clans - Container section */
+.clan-container{
+  background-color: #3b3b3b67;
+  border-radius: 15px;
 }
