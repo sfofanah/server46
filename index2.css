@@ -169,7 +169,7 @@ body{
 .new-underline{
   display: block;
   height: 6px;
-  width: 120px;
+  width: 180px;
   background: var(--logo-accent);
   margin: 15px auto;
 }
