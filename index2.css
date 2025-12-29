@@ -179,6 +179,10 @@ body{
   margin: 15px auto;
 }
 
+.image-with-heading h3{
+  text-align: left;
+}
+
 .clan-description p{
   font-family: myFont2;
   color: rgba(255,255,255,0.85);
