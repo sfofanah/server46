@@ -173,3 +173,10 @@ body{
   background: var(--logo-accent);
   margin: 15px auto;
 }
+
+.clans-description{
+  font-family: myFont2;
+  color: white;
+  text-align: center;
+  line-height: 1.6;
+}
