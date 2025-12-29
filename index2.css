@@ -89,6 +89,15 @@ body{
   overflow: hidden;
 }
 
+.card-link:hover{
+  box-shadow: 4px 4px 4px var(--logo-accent);
+  transition: box-shadow 0.4s ease;
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  filter:  brightness(1.1);
+
+}
+
 .card-link .left-column{
   overflow: hidden;
   transition: transform 0.4s ease;
@@ -209,4 +218,10 @@ body{
   color: rgba(255,255,255,0.85);
   text-align: center;
   line-height: 1.6;
+}
+
+.column-edit img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  filter:  brightness(1.1);
 }
