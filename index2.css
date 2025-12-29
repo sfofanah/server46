@@ -1,5 +1,6 @@
 /*-------------------------------------------------------------*/
-/* Pre-defining CSS */
+
+/* Inserting my own custom color and font styles */
 :root {
   --logo-accent: #C7AE6A;
 }
@@ -13,8 +14,10 @@
   font-family: myFont2;
   src: url(Fonts/montserrat-font/MontserratExtralight-jEZ6j.ttf);
 }
+
 /*-------------------------------------------------------------*/
-/* Home -Body*/
+
+/* Home Page - Body*/
 body{
   margin: 0;
   padding: 0;
@@ -22,10 +25,11 @@ body{
 }
 
 /*-------------------------------------------------------------*/
-/* Home - Section Background Colors */
+
+/* Home Page - Section edits */
 .dark-section{
   background-color: #000000;
-  color: white;
+  color: rgba(255,255,255,0.85);
 }
 
 .light-section{
@@ -38,12 +42,12 @@ body{
 }
 
 /*-------------------------------------------------------------*/
-/* Home - Navigation background */
+
+/* Home Page - Navigation section */
 .navbar{
   background-color: #000000;
 }
 
-/* styling the nav link items */
 .navbar .nav-link{
   font-size: 1.4rem;
   font-weight: 700;
@@ -53,11 +57,9 @@ body{
   transition: color 0.2s ease, text-decoration-color 0.2s ease;
 }
 
-/* Hover and Focus Effects of nav link items */
 .navbar .nav-link:hover,
 .navbar .nav-link:focus {
   color: var(--logo-accent);
- 
 }
 
 .navbar .nav-link.active {
@@ -65,7 +67,8 @@ body{
 }
 
 /*-------------------------------------------------------------*/
-/* Home - Featured Update Section */
+
+/* Home Page - Featured Update Section */
 .parent-of-all-cards{
   display: flex;
   flex-direction: column;
@@ -131,7 +134,8 @@ body{
 }
 
 /*-------------------------------------------------------------*/
-/* Home - Footer Section */
+
+/* Home Page - Footer Section */
 .footer-edit{
   display: flex;
   align-items: center;
@@ -146,7 +150,8 @@ body{
 }
 
 /*-------------------------------------------------------------*/
-/* Clans - Container section */
+
+/* Clans Page - Container section */
 .clan-container{
   background-color: #2f2f2f;
   border-radius: 15px;
