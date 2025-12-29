@@ -179,8 +179,15 @@ body{
   margin: 15px auto;
 }
 
-.image-with-heading h3{
+.image-with-heading-and-text h3{
   text-align: left;
+  font-family: myFont;
+  color: rgba(255,255,255,0.85);
+}
+
+.image-with-heading-and-text img{
+  border: 2px solid var(--logo-accent);
+  border-radius: 8px;
 }
 
 .clan-description p{
