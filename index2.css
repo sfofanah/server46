@@ -198,6 +198,11 @@ body{
   text-align: left;
 }
 
+.hr-divider{
+  border: solid 2px var(--logo-accent);
+  width: 100%;
+  margin: 0 auto;
+}
 
 .clan-description p{
   font-family: myFont2;
