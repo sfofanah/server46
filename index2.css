@@ -176,7 +176,7 @@ body{
 
 .clan-description p{
   font-family: myFont2;
-  color: white;
+  color: rgba(255,255,255,0.85);
   text-align: center;
   line-height: 1.6;
 }
