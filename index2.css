@@ -24,6 +24,81 @@ body{
   background-color: black;
 }
 
+/* reusable parent of all cards */
+.new-parent-of-all-cards{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* reusable container */
+.new-container{
+  background-color: black;
+  border-radius: 15px;
+  padding: 40px;
+  margin-top: 20px;
+}
+
+/* reusable title */
+.new-title{
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* reusable title h1 */
+.new-title h1{
+  font-family: myFont;
+  color: rgba(255,255,255,0.85);
+  font-size: 2rem;
+  text-shadow: #000000 2px 2px 4px;
+}
+
+/* reusable underline (Span) */
+.new-underline{
+  display: block;
+  height: 6px;
+  width: 180px;
+  background: var(--logo-accent);
+  margin: 15px auto;
+}
+
+/* reusable column style */
+.new-column{
+  background-color: rgb(22, 21, 21);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 20px;
+}
+
+/* reusable column hover effect */
+.new-column:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  filter: brightness(1.1);
+}
+
+/* reusable hr divider */
+.new-hr{
+  border: 0;
+  border-top: 3px solid #bfa76a;
+  border-radius: 3px;
+  opacity: 1;
+}
+
+/* reuseable footer edits*/
+.new-footer-edit{
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  gap: 15px;
+}
+
+/* reusable footer paragraph edits*/
+.new-footer-edit p{
+  font-family: myFont2;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
 /*-------------------------------------------------------------*/
 
 /* Home Page - Section edits */
