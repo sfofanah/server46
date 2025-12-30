@@ -34,7 +34,7 @@
 /* reusable title h1 */
 .new-title h1{
   font-family: myFont;
-  color: rgba(255,255,255,0.85);
+  color: white;
   font-size: 2rem;
   text-shadow: #000000 2px 2px 4px;
 }
@@ -248,7 +248,7 @@ body{
 
 .clan-title h1{
   font-family: myFont;
-  color: rgba(255,255,255,0.85);
+  color: white;
   font-size: 2rem;
   text-shadow: #000000 2px 2px 4px;
 }
