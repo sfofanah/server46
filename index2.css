@@ -49,21 +49,21 @@
 }
 
 /* reusable parent of all cards */
-.new-parent-of-all-cards{
+.new-cards-container{
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
 
 /* reusable column style */
-.new-column{
+.new-card{
   background-color: rgb(22, 21, 21);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   padding: 20px;
 }
 
 /* reusable column hover effect */
-.new-column:hover {
+.new-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
   filter: brightness(1.1);
