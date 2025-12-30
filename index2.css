@@ -17,13 +17,6 @@
 
 /*-------------------------------------------------------------*/
 
-/* Home Page - Body*/
-body{
-  margin: 0;
-  padding: 0;
-  background-color: black;
-}
-
 /* reusable parent of all cards */
 .new-parent-of-all-cards{
   display: flex;
@@ -100,6 +93,13 @@ body{
 }
 
 /*-------------------------------------------------------------*/
+
+/* Home Page - Body*/
+body{
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
 
 /* Home Page - Section edits */
 .dark-section{
