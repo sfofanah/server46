@@ -17,13 +17,6 @@
 
 /*-------------------------------------------------------------*/
 
-/* reusable parent of all cards */
-.new-parent-of-all-cards{
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-
 /* reusable container */
 .new-container{
   background-color: black;
@@ -53,6 +46,13 @@
   width: 180px;
   background: var(--logo-accent);
   margin: 15px auto;
+}
+
+/* reusable parent of all cards */
+.new-parent-of-all-cards{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 /* reusable column style */
