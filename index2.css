@@ -64,14 +64,16 @@
 
 /* reusable column hover effect */
 .new-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+  transform: translateY(-12px);
+  box-shadow: 0 12px 30px var(--logo-accent);
   filter: brightness(1.1);
 }
 
+/* reusable image hover effect */
 .new-card:hover img{
-  transform: scale(1.05);
+  transform: scale(1.1);
   transition: transform 0.4s ease;
+  overflow: hidden;
 }
 
 /* reusable top hr divider */
