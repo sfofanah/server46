@@ -65,7 +65,6 @@
 /* reusable column hover effect */
 .new-card:hover {
   transform: translateY(-12px);
-  box-shadow: 0 12px 30px var(--logo-accent);
   filter: brightness(1.1);
 }
 
