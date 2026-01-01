@@ -69,6 +69,11 @@
   filter: brightness(1.1);
 }
 
+.new-card:hover img{
+  transform: scale(1.05);
+  transition: transform 0.4s ease;
+}
+
 /* reusable top hr divider */
 .new-hr-top{
   border: 0;
@@ -277,6 +282,12 @@ body{
   width: 100%;
   height: auto;
   display: block;
+ 
+}
+
+.image-with-heading-and-text:hover img{
+  transform: scale(1.05);
+  transition: transform 0.4s ease;
 }
 
 .image-with-heading-and-text h3{
