@@ -69,14 +69,22 @@
   filter: brightness(1.1);
 }
 
-/* reusable hr divider */
-.new-hr{
+/* reusable top hr divider */
+.new-hr-top{
   border: 0;
   border-top: 3px solid #bfa76a;
   border-radius: 3px;
   opacity: 1;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
+}
+
+/* reusable bottom hr divider */
+.new-hr-bottom{
+  border: 0;
+  border-top: 3px solid #bfa76a;
+  border-radius: 3px;
+  opacity: 1;
+  margin-top: 70px;
 }
 
 /* reuseable footer edits*/
