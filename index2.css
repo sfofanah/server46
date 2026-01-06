@@ -40,7 +40,8 @@
 }
 
 .new-paragraph p{
-
+  font-family: myFont2;
+  text-align: center;
 }
 
 /* reusable underline (Span) */
