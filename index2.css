@@ -39,6 +39,10 @@
   text-shadow: #000000 2px 2px 4px;
 }
 
+.new-paragraph p{
+
+}
+
 /* reusable underline (Span) */
 .new-underline{
   display: block;
