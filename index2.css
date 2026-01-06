@@ -39,6 +39,7 @@
   text-shadow: #000000 2px 2px 4px;
 }
 
+/* resuable Paragraph under Title */
 .new-paragraph p{
   font-family: myFont2;
   text-align: center;
@@ -75,6 +76,10 @@
   background-color: rgb(22, 21, 21);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   padding: 20px;
+}
+
+.new-horizontal-img {
+  display: flex;
 }
 
 /* reusable column hover effect */
