@@ -1,4 +1,4 @@
-const myTest = document.querySelector(".new-card-link");
+const myTest = document.querySelector("#test");
 console.log("What was found:", myTest);
 
 myTest.addEventListener("click", function(event) {
