@@ -1,12 +1,24 @@
-const myTest = document.querySelector("#test");
-console.log("What was found:", myTest);
+const myTest = document.querySelectorAll(".new-card-link");
+console.log("What was found:", myTest.length);
 
+myTest.forEach(function(card) {
+    card.addEventListener("click", function(event) {
+        event.preventDefault();
+
+        const getTestID = card.querySelector(".test");
+        getTestID.textContent = "I changed this text using JS";
+    })
+})
+
+
+
+/*
 myTest.addEventListener("click", function(event) {
     event.preventDefault();
     myTest.textContent = "I changed the text using JS";
 })
 
-
+*/
 
 
 
