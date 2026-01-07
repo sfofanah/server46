@@ -1,6 +1,9 @@
 const myTest = document.querySelector("#test");
 console.log("What was found:", myTest);
 
+myTest.addEventListener("click", function() {
+    myTest.textContent = "I changed the text using JS";
+})
 
 
 
