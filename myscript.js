@@ -1,7 +1,8 @@
-const myTest = document.querySelector("#test");
+const myTest = document.querySelector(".new-card-link");
 console.log("What was found:", myTest);
 
-myTest.addEventListener("click", function() {
+myTest.addEventListener("click", function(event) {
+    event.preventDefault();
     myTest.textContent = "I changed the text using JS";
 })
 
