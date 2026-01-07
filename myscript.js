@@ -5,7 +5,7 @@ myClanCards.forEach(function(card) {
   card.addEventListener("click", function(e) {
     e.preventDefault(); // stops the page from navigating away
 
-    const clickedCard = e.target;
+    const clickedCard = e.currentTarget;
     const clanName = clickedCard.dataset.clan;
 
     console.log("Clan clicked:", clanName);
