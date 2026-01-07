@@ -4,10 +4,10 @@ console.log("What was found:", myTest.length);
 myTest.forEach(function(card) {
     card.addEventListener("click", function(event) {
         event.preventDefault();
-
-        const getTestID = card.querySelector(".test");
-        getTestID.textContent = "I changed this text using JS";
-        console.log(card.dataset.clan);
+        const clanName = card.dataset.clan;
+        const getParagraphID = card.querySelector(".test");
+        getParagraphID.textContent = "Clicked: " + clanName;
+        
     })
 })
 
