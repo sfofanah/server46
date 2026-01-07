@@ -7,6 +7,7 @@ myTest.forEach(function(card) {
 
         const getTestID = card.querySelector(".test");
         getTestID.textContent = "I changed this text using JS";
+        console.log(card.dataset.clan);
     })
 })
 
