@@ -1,4 +1,4 @@
-const myTest = document.querySelectorAll("#test");
+const myTest = document.querySelector("#test");
 console.log("What was found:", myTest);
 
 
