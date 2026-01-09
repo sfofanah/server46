@@ -60,7 +60,8 @@
 /* reusable parent of all cards */
 .new-cards-container{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
@@ -86,11 +87,6 @@
   padding: 18px;
   gap: 18px;
   align-items: center;
-}
-
-.card-img {
-  overflow: hidden;
-  border-radius: 10px;
 }
 
 /* reusable column hover effect */
@@ -365,3 +361,9 @@ body{
 /*-------------------------------------------------------------*/
 
 /* Leaders Page - Container section */
+.card-media { outline: 4px solid red !important; }
+.card-media img { border-radius: 0 !important; }
+.card-media img { margin-bottom: 0 !important; }
+.new-card-horizontal { overflow: hidden; }
+.new-card-horizontal { display: flex; align-items: center; }
+.new-card-horizontal { display: flex !important; flex-direction: row !important; }
