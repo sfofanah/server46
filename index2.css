@@ -80,6 +80,7 @@
 
 .new-card-horizontal{
   display: flex;
+  background: rgb(22, 21, 21);
 }
 
 /* reusable column hover effect */
