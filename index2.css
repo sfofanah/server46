@@ -361,9 +361,3 @@ body{
 /*-------------------------------------------------------------*/
 
 /* Leaders Page - Container section */
-.card-media { outline: 4px solid red !important; }
-.card-media img { border-radius: 0 !important; }
-.card-media img { margin-bottom: 0 !important; }
-.new-card-horizontal { overflow: hidden; }
-.new-card-horizontal { display: flex; align-items: center; }
-.new-card-horizontal { display: flex !important; flex-direction: row !important; }
