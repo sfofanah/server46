@@ -91,6 +91,7 @@
 .new-card-horizontal img {
   border-radius: 0;
   margin-bottom: 0;
+  display: block;
 }
 
 /* reusable column hover effect */
