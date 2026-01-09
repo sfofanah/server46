@@ -88,10 +88,9 @@
   align-items: center;
 }
 
-.new-card-horizontal img {
-  border-radius: 0;
-  margin-bottom: 0;
-  display: block;
+.card-img {
+  overflow: hidden;
+  border-radius: 10px;
 }
 
 /* reusable column hover effect */
