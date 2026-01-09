@@ -78,9 +78,11 @@
   padding: 20px;
 }
 
+/* reusable horizontal card img + text side to side */
 .new-card-horizontal{
   display: flex;
   background: rgb(22, 21, 21);
+  border-radius: 10px;
 }
 
 /* reusable column hover effect */
