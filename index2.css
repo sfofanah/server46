@@ -360,13 +360,13 @@ body{
 
 /*-------------------------------------------------------------*/
 
-/* Leaders Page - Container section */
+/* CLS Page - Team cards Section */
 .team-card{
   display: flex;
   background: rgb(22, 21, 21);      
   border-radius: 10px;
   overflow: hidden;         /* important for clean image edges */
-  min-height: 180px;        /* gives the card a consistent height */
+  min-height: 200px;        /* gives the card a consistent height */
 }
 
 .team-photo {
@@ -400,3 +400,5 @@ body{
   font-family: myFont2;
   font-size: 0.95rem;
 }
+
+/*-------------------------------------------------------------*/
