@@ -385,3 +385,12 @@ body{
   padding: 16px;
   color: white;
 }
+
+.team-info h3{
+  margin: 0 0 8px 0;
+}
+
+.team-info p{
+  margin: 0;
+  font-family: myFont2;
+}
