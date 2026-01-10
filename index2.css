@@ -361,3 +361,6 @@ body{
 /*-------------------------------------------------------------*/
 
 /* Leaders Page - Container section */
+.leader-card {
+  display: flex;
+}
