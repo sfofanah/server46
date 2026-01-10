@@ -59,7 +59,7 @@
 
 /* reusable parent of all cards */
 .new-cards-container{
-  display: flex;
+  display: grid;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 30px;
@@ -363,7 +363,25 @@ body{
 /* Leaders Page - Container section */
 .team-card{
   display: flex;
-  background: #2f2f2f;      /* dark gray card */
+  background: #2f2f2f;      
   border-radius: 10px;
- 
+  overflow: hidden;         /* important for clean image edges */
+  min-height: 180px;        /* gives the card a consistent height */
+}
+
+.team-photo {
+  flex: 0 0 50%;            /* left side width */
+}
+
+.team-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;        /* crops nicely instead of squishing */
+  display: block;           /* Removes tiny gaps */
+}
+
+.team-info {
+  flex: 1;
+  padding: 16px;
+  color: white;
 }
