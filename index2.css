@@ -361,3 +361,9 @@ body{
 /*-------------------------------------------------------------*/
 
 /* Leaders Page - Container section */
+.team-card{
+  display: flex;
+  background: #2f2f2f;      /* dark gray card */
+  border-radius: 10px;
+ 
+}
