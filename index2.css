@@ -415,12 +415,18 @@ body{
 
 }
 
+.new-team-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
 .new-team-img {
   width: 100%;
   aspect-ratio: 1 / 1;   /* makes it a square */
   object-fit: cover;     /* crops nicely without stretching */
   display: block;
 }
+
 
 .team-label {
   margin-top: auto;
