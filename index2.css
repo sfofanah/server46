@@ -415,6 +415,24 @@ body{
   transition: transform 0.25s ease, box-shadow 0.25s ease;  
 }
 
+.team-photo {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;   /* makes it a square */
+  display: block;
+}
+
+.team-label {
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  bottom: 12px;
+
+  padding: 10px 12px;
+  background: rgba(0,0,0,0.85);
+  border-radius: 10px;
+}
+
 .new-team-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
@@ -422,16 +440,13 @@ body{
 
 .new-team-img {
   width: 100%;
+  height: 100%;
   aspect-ratio: 1 / 1;   /* makes it a square */
   object-fit: cover;     /* crops nicely without stretching */
+  object-position: center;
   display: block;
 }
 
-
-.team-label {
-  margin-top: auto;
-  padding: 10px 12px;
-}
 
 .team-label h5 {
   margin: 0;
