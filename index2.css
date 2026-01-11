@@ -367,6 +367,11 @@ body{
   border-radius: 10px;
   overflow: hidden;         /* important for clean image edges */
   min-height: 200px;        /* gives the card a consistent height */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-12px);
 }
 
 .team-photo {
