@@ -412,7 +412,7 @@ body{
   flex-direction: column;
   border-radius: 16px;
   overflow: hidden;
-
+  transition: transform 0.25s ease, box-shadow 0.25s ease;  
 }
 
 .new-team-card:hover {
