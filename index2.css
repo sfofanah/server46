@@ -39,15 +39,6 @@
   text-shadow: #000000 2px 2px 4px;
 }
 
-/* resuable Paragraph under Title */
-.new-paragraph p{
-  font-family: myFont2;
-  text-align: center;
-  margin: 0 auto;
-  width: 70%;
-  margin-bottom: 5%;
-}
-
 /* reusable underline (Span) */
 .new-underline{
   display: block;
@@ -405,6 +396,5 @@ body{
   font-family: myFont2;
   font-size: 0.95rem;
 }
-
 
 /*-------------------------------------------------------------*/
