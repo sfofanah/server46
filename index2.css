@@ -415,7 +415,7 @@ body{
   transition: transform 0.25s ease, box-shadow 0.25s ease;  
 }
 
-.team-photo {
+.new-team-photo {
   position: relative;
   width: 100%;
   aspect-ratio: 1 / 1;   /* makes it a square */
