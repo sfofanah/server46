@@ -456,7 +456,8 @@ body{
 
 .team-label p {
   margin: 0;
-  font-size: 0.8rem;
+  font-size: 0.70rem;
+  line-height: 1.2;
   opacity: 0.9;
 }
 /*-------------------------------------------------------------*/
