@@ -402,15 +402,15 @@ body{
 .new-card-h {
   background-color: rgb(22, 21, 21);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  padding: 20px;
   display: flex;
   gap: 20px;
 }
 
 .new-team-pic {
-  flex: 0 0 50%;
+  flex: 0 0 50%;    /* left side width */
   overflow: hidden;
 }
+
 .new-team-pic img {
   width: 100%;
   height: 100%;
