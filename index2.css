@@ -398,3 +398,15 @@ body{
 }
 
 /*-------------------------------------------------------------*/
+
+.new-card-h {
+  background-color: rgb(22, 21, 21);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.new-team-pic {
+  
+}
