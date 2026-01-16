@@ -407,6 +407,12 @@ body{
   gap: 20px;
 }
 
-.new-team-pic {
-  
+.new-team-pic img {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  background-color: white;
 }
