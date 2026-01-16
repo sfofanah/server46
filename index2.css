@@ -431,3 +431,9 @@ body{
   justify-content: center;
   gap: 6px;
 }
+
+.new-team-info-h h3 {
+  margin: 0;
+  font-size: 1.35rem;
+  font-weight: 700;
+}
