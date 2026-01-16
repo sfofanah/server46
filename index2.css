@@ -404,7 +404,7 @@ body{
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   gap: 20px;
-  
+  min-height: 200px;
 }
 
 .new-card-h:hover {
@@ -422,4 +422,12 @@ body{
   height: 100%;
   object-fit: cover;    /* crops nicely instead of squishing */
   display: block;       /* Removes tiny gaps */
+}
+
+.new-team-info-h {
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
 }
