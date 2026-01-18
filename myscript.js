@@ -16,6 +16,8 @@ myTest.forEach(function(card) {
 // Selecting the button I created in CLS.html
 const toggleBtn = document.getElementById("toggleRolesBtn"); 
 
+// Select all roles texts that I gave the <p> elements of the class "role-text"
+const roleTexts = document.querySelectorAll(".role-text");
 
 
 
