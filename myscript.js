@@ -19,6 +19,9 @@ const toggleBtn = document.getElementById("toggleRolesBtn");
 // Select all roles texts - (find the paragraphs with the class "role-text")
 const roleTexts = document.querySelectorAll(".role-text");
 
+// Make the button visible - (set the display of the button to block)
+let rolesVisible = true;
+
 // Add a click listener - (when the button is clicked, do something)
 toggleBtn.addEventListener("click", function() {
   
@@ -26,7 +29,7 @@ toggleBtn.addEventListener("click", function() {
   roleTexts.forEach(function(role) {
     role.style.display = "none"; // Hide the role text
   });
-  
+
 });
 
 
