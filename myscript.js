@@ -31,15 +31,15 @@ toggleBtn.addEventListener("click", function() {
       role.style.display = "none"; // Hide the role text
     });
 
-    rolesVisible = false; // Update the state to indicate roles are now hidden
+    rolesVisible = false; // remember they are now hidden
  
   } else {
     // If the roles are hidden, loop through each one and show them.
     roleTexts.forEach(function(role) {
-      role.style.display = "block"; // Show the role text
+      role.style.display = ""; // Show the role text
     });
 
-    rolesVisible = true; // Update the state to indicate roles are now visible
+    rolesVisible = true; // remember they are now visible
 
   }
 
