@@ -25,11 +25,18 @@ let rolesVisible = true;
 // Add a click listener - (when the button is clicked, do something)
 toggleBtn.addEventListener("click", function() {
   
-  // Loop through each role text and hide its visibility
-  roleTexts.forEach(function(role) {
-    role.style.display = "none"; // Hide the role text
-  });
-
+  if (rolesVisible) {
+    roleTexts.forEach(function(role) {
+      role.style.display = "none"; // Hide the role text
+    });
+    rolesVisible = false;
+  } else {
+    roleTexts.forEach(function(role) {
+      role.style.display = "block"; // Show the role text
+    });
+    rolesVisible = true;
+  }
+  
 });
 
 
