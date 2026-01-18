@@ -11,16 +11,18 @@ myTest.forEach(function(card) {
     })
 })
 
-/* ----------------------------------------------------------------------- */
+/* ----------------------------- CLS.html ------------------------------------------ */
 
-// Selecting the button I created in CLS.html
+// Select the button - (find the button)
 const toggleBtn = document.getElementById("toggleRolesBtn"); 
 
-// Select all roles texts that I gave the <p> elements of the class "role-text"
+// Select all roles texts - (find the paragraphs with the class "role-text")
 const roleTexts = document.querySelectorAll(".role-text");
 
-
-
+// Add a click listener - (when the button is clicked, do something)
+toggleBtn.addEventListener("click", function() {
+  console.log("Button clicked! Toggling role visibility.");
+});
 
 
 
