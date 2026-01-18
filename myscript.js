@@ -21,7 +21,12 @@ const roleTexts = document.querySelectorAll(".role-text");
 
 // Add a click listener - (when the button is clicked, do something)
 toggleBtn.addEventListener("click", function() {
-  console.log("Button clicked! Toggling role visibility.");
+  
+  // Loop through each role text and hide its visibility
+  roleTexts.forEach(function(role) {
+    role.style.display = "none"; // Hide the role text
+  });
+  
 });
 
 
