@@ -13,7 +13,8 @@ myTest.forEach(function(card) {
 
 /* ----------------------------------------------------------------------- */
 
-
+// Selecting the button I created in CLS.html
+const toggleBtn = document.getElementById("toggleRolesBtn"); 
 
 
 
