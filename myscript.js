@@ -53,13 +53,26 @@ const nameBtn = document.getElementById("toggleNameBtn");
 // Let's reference all the name texts
 const nameTexts = document.querySelectorAll(".name-text");
 
+// Let's keep track of whether names are visible
+let namesVisible = true;
 
-
-
-
-
-
-
+// Add a click listener to the name button
+nameBtn.addEventListener("click", function() {
+  
+  // If names are visible, hide them
+  if (namesVisible) { 
+    nameTexts.forEach(function(name) {
+      name.style.display = "none"; // Hide the name text
+    });
+    namesVisible = false; // remember they are now hidden
+  } else {
+    // If names are hidden, show them
+    nameTexts.forEach(function(name) {
+      name.style.display = ""; // Show the name text
+    });
+    namesVisible = true; // remember they are now visible
+  }
+});
 
 
 
