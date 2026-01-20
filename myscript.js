@@ -63,16 +63,18 @@ nameBtn.addEventListener("click", function() {
     nameTexts.forEach(function(name) {
       name.style.display = "none"; // Hide the name text
       nameBtn.textContent = "Show Name"; // Change button text
+      namesVisible = false; // remember they are now hidden
     });
-    namesVisible = false; // remember they are now hidden
+   
   } else {
     // If names are hidden, show them
     nameTexts.forEach(function(name) {
       name.style.display = ""; // Show the name text
       nameBtn.textContent = "Hide Name"; // Change button text
+      namesVisible = true; // remember they are now visible
     });
-    namesVisible = true; // remember they are now visible
   }
+  
 });
 
 
