@@ -65,6 +65,7 @@ nameBtn.addEventListener("click", function() {
   if (namesVisible) { 
     nameTexts.forEach(function(name) {
       name.style.display = "none"; // Hide the name text
+      nameBtn.textContent = "Show Name"; // Change button text
     });
     namesVisible = false; // remember they are now hidden
   } else {
