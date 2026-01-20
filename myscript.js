@@ -30,19 +30,16 @@ toggleBtn.addEventListener("click", function() {
     roleTexts.forEach(function(role) {
       role.style.display = "none"; // Hide the role text
       toggleBtn.textContent = "Show Roles"; // Change button text
+      rolesVisible = false; // remember they are now hidden
     });
 
-    rolesVisible = false; // remember they are now hidden
- 
   } else {
     // If the roles are hidden, loop through each one and show them.
     roleTexts.forEach(function(role) {
       role.style.display = ""; // Show the role text
       toggleBtn.textContent = "Hide Roles"; // Change button text
+      rolesVisible = true; // remember they are now visible
     });
-
-    rolesVisible = true; // remember they are now visible
-
   }
 
 });
@@ -72,6 +69,7 @@ nameBtn.addEventListener("click", function() {
     // If names are hidden, show them
     nameTexts.forEach(function(name) {
       name.style.display = ""; // Show the name text
+      nameBtn.textContent = "Hide Name"; // Change button text
     });
     namesVisible = true; // remember they are now visible
   }
