@@ -47,6 +47,37 @@ toggleBtn.addEventListener("click", function() {
 
 
 
+/* Let's reference the new button */
+const nameBtn = document.getElementById("toggleNamesBtn");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 myTest.addEventListener("click", function(event) {
     event.preventDefault();
