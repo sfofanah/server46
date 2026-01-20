@@ -48,8 +48,10 @@ toggleBtn.addEventListener("click", function() {
 
 
 /* Let's reference the new button */
-const nameBtn = document.getElementById("toggleNamesBtn");
+const nameBtn = document.getElementById("toggleNameBtn");
 
+// Let's reference all the name texts
+const nameTexts = document.querySelectorAll(".name-text");
 
 
 
