@@ -182,7 +182,7 @@
   opacity: 0.8;
 }
 
-/*-------------------------------------------------------------*/
+/*------------------------- Index Page Body ------------------------------------*/
 
 /* Home Page - Body*/
 body{
@@ -206,7 +206,7 @@ body{
   transition: background-color 0.5s ease, color 0.5s ease;
 }
 
-/*-------------------------------------------------------------*/
+/*------------------------- Index Page Navigation ------------------------------------*/
 
 /* Home Page - Navigation section */
 .navbar{
@@ -231,7 +231,7 @@ body{
   color: var(--logo-accent);
 }
 
-/*-------------------------------------------------------------*/
+/*------------------------- Index Page Featured Update Section ------------------------------------*/
 
 /* Home Page - Featured Update Section */
 .parent-of-all-cards{
@@ -305,7 +305,7 @@ body{
   font-family: myFont2;
 }
 
-/*-------------------------------------------------------------*/
+/*------------------------- Index Page Footer ------------------------------------*/
 
 /* Home Page - Footer Section */
 .footer-edit{
@@ -321,7 +321,7 @@ body{
   opacity: 0.8;
 }
 
-/*-------------------------------------------------------------*/
+/*------------------------- Clans Page Container + Title ------------------------------------*/
 
 /* Clans Page - Container section */
 .clan-container{
@@ -405,7 +405,7 @@ body{
   filter: brightness(1.1);
 }
 
-/*-------------------------------------------------------------*/
+/*------------------------- CLS Page Card Section ------------------------------------*/
 
 /* CLS Page - Team cards Section */
 .team-card{
