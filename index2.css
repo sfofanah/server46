@@ -71,7 +71,7 @@
 
 /*-------------------------------------------------------------*/
 
-/* reusable team card - Vertical Version */
+/* reusable card - Vertical Version */
 .new-card{
   background-color: rgb(22, 21, 21);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -93,7 +93,7 @@
 
 /*-------------------------------------------------------------*/
 
-/* Team cards Section - Horizontal version */
+/* reusable card - Horizontal version */
 .new-card-h {
   background-color: rgb(22, 21, 21);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -144,6 +144,8 @@
   font-family: myFont2;
   font-size: 0.95rem;
 }
+
+/*-------------------------------------------------------------*/
 
 /* reusable top hr divider */
 .new-hr-top{
