@@ -35,8 +35,8 @@ toggleBtn.addEventListener("click", function() {
   if (rolesVisible) {
     roleTexts.forEach(function(role) {
       role.style.display = "none"; // Hide the role text
-      toggleBtn.textContent = "Show Roles"; // Change button text
-      arrow.classList.toggle("rotate"); // Rotate arrow
+      roleBtnText.textContent = "Show Roles"; // Change button text
+      roleArrow.classList.remove("rotate"); // Rotate arrow
       rolesVisible = false; // remember they are now hidden
     });
 
@@ -44,7 +44,8 @@ toggleBtn.addEventListener("click", function() {
     // If the roles are hidden, loop through each one and show them.
     roleTexts.forEach(function(role) {
       role.style.display = ""; // Show the role text
-      toggleBtn.textContent = "Hide Roles"; // Change button text
+      roleBtnText.textContent = "Hide Roles"; // Change button text
+      roleArrow.classList.add("rotate"); // Rotate arrow
       rolesVisible = true; // remember they are now visible
     });
   }
