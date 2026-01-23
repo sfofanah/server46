@@ -16,6 +16,12 @@ myTest.forEach(function(card) {
 // Select the button - (find the button)
 const toggleBtn = document.getElementById("toggleRolesBtn"); 
 
+// Select the text inside the button
+const roleBtnText = toggleBtn.querySelector(".btn-text");
+
+// Select the arrow inside the button
+const roleArrow = toggleBtn.querySelector(".arrow");
+
 // Select all roles texts - (find the paragraphs with the class "role-text")
 const roleTexts = document.querySelectorAll(".role-text");
 
@@ -30,6 +36,7 @@ toggleBtn.addEventListener("click", function() {
     roleTexts.forEach(function(role) {
       role.style.display = "none"; // Hide the role text
       toggleBtn.textContent = "Show Roles"; // Change button text
+      arrow.classList.toggle("rotate"); // Rotate arrow
       rolesVisible = false; // remember they are now hidden
     });
 
