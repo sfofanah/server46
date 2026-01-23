@@ -456,7 +456,8 @@ body{
 #toggleRolesBtn {
   display: flex;    /* Make the button horizontal */
   align-items: center;  /* Center items vertically */
+  margin: 0 auto;  /* Center the button horizontally */
+  gap: 10px;    /* Space between text and arrow */
 }
 
-}
 /*-------------------------------------------------------------*/
