@@ -25,6 +25,8 @@
   margin-top: 20px;
 }
 
+/*-------------------------------------------------------------*/
+
 /* reusable title */
 .new-title{
   margin-bottom: 20px;
@@ -47,6 +49,8 @@
   background: var(--logo-accent);
   margin: 15px auto;
 }
+
+/*-------------------------------------------------------------*/
 
 /* reusable parent of all cards */
 .new-cards-container{
