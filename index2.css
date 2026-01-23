@@ -460,4 +460,8 @@ body{
   gap: 10px;    /* Space between text and arrow */
 }
 
+#arrow {
+  display: inline-block; /* Ensure the arrow is inline */
+  transition: transform 0.3s ease; /* Smooth rotation */
+}
 /*-------------------------------------------------------------*/
