@@ -453,4 +453,10 @@ body{
   font-size: 0.95rem;
 }
 
+#toggleRolesBtn {
+  display: flex;    /* Make the button horizontal */
+  align-items: center;  /* Center items vertically */
+}
+
+}
 /*-------------------------------------------------------------*/
