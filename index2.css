@@ -484,4 +484,11 @@ body{
 .arrow-2.rotate {
   transform: rotate(180deg); /* Rotate the arrow */
 }
+
+.button-group {
+  display: flex;
+  gap: 20px; /* Space between the two buttons */
+  justify-content: center; /* Center the button group */
+  margin: 0 auto 20px auto; /* Center the button group with bottom margin */
+}
 /*-------------------------------------------------------------*/
