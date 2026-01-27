@@ -76,7 +76,8 @@ nameBtn.addEventListener("click", function() {
   if (namesVisible) { 
     nameTexts.forEach(function(name) {
       name.style.display = "none"; // Hide the name text
-      nameBtn.textContent = "Show Name"; // Change button text
+      nameBtnText.textContent = "Show Name"; // Change button text
+      nameArrow.classList.remove("rotate"); // Rotate arrow
       namesVisible = false; // remember they are now hidden
     });
    
@@ -84,7 +85,8 @@ nameBtn.addEventListener("click", function() {
     // If names are hidden, show them
     nameTexts.forEach(function(name) {
       name.style.display = ""; // Show the name text
-      nameBtn.textContent = "Hide Name"; // Change button text
+      nameBtnText.textContent = "Hide Name"; // Change button text
+      nameArrow.classList.add("rotate"); // Rotate arrow
       namesVisible = true; // remember they are now visible
     });
   }
