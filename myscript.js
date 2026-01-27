@@ -60,6 +60,12 @@ const nameBtn = document.getElementById("toggleNameBtn");
 // Let's reference all the name texts
 const nameTexts = document.querySelectorAll(".name-text");
 
+// Let's get the second button text span
+const nameBtnText = nameBtn.querySelector(".btn-text-2");
+
+// let's get the second arrow span
+const nameArrow = nameBtn.querySelector(".arrow-2");
+
 // Let's keep track of whether names are visible
 let namesVisible = true;
 
