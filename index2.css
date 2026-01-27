@@ -480,4 +480,8 @@ body{
   display: inline-block; /* Ensure the arrow is inline */
   transition: transform 0.3s ease; /* Smooth rotation */
 }
+
+.arrow-2.rotate {
+  transform: rotate(180deg); /* Rotate the arrow */
+}
 /*-------------------------------------------------------------*/
