@@ -11,7 +11,7 @@ myTest.forEach(function(card) {
     })
 })
 
-/* ----------------------------- CLS.html ------------------------------------------ */
+/* ----------------------------- CLS.html (First Button) ------------------------------------------ */
 
 // Select the button - (find the button)
 const toggleBtn = document.getElementById("toggleRolesBtn"); 
@@ -53,6 +53,7 @@ toggleBtn.addEventListener("click", function() {
 });
 
 
+/* ----------------------------- CLS.html (Second Button) ------------------------------------------ */
 
 /* Let's reference the new button */
 const nameBtn = document.getElementById("toggleNameBtn");
