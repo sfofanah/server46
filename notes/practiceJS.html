@@ -9,12 +9,33 @@
 </head>
 
 <body>
+    
     <h1>Practice JavaScript</h1>
 
+    <!-- Week 1 -->
+    <section>
+        <h2>Variables</h2>
+        <p>In JavaScript, you can declare variables using <strong>var</strong>, <strong>let</strong>, or <strong>const</strong>.</p>
+        <p>The <strong>let</strong> variable can be changed later in the code, unlike <strong>const</strong> which is constant.</p>
+        <p id="Example-1"><strong>Example 1:</strong> Check your console output!</p>
+    </section>
+   
     <script>
-        // JavaScript code goes here
-        console.log("Hello, World!");
+        
+        // Declaring variables
+        let name = "John";
+        let age = 30;
+
+        // Displaying the variables in the console
+        console.log("Name: " + name);
+        console.log("Age: " + age);
+        
+        // Get <p> ID elements from the HTML
+        const getExample1 = document.getElementById("Example-1");
+        console.log(getExample1);
+
     </script>
+
 </body>
 
 </html>
