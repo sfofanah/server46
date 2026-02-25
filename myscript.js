@@ -106,3 +106,11 @@ function createLeaderMessage(name, role) {
 }
 const message = createLeaderMessage("Rick", "leader"); 
 console.log(message);
+
+const leaderNames = ["Rick", "Daryl", "Michonne"];
+
+function welcomeLeader(name) {
+  return "Welcome, " + name;
+}
+
+console.log(welcomeLeader(leaderNames[0])); // Welcome, Rick
