@@ -99,18 +99,20 @@ nameBtn.addEventListener("click", function() {
 function greetLeader(name) {
   console.log("welcome, " + name);
 }
-greetLeader("Rick");
+// greetLeader("Rick");
 
 function createLeaderMessage(name, role) {
   return name + " is our " + role;
 }
 const message = createLeaderMessage("Rick", "leader"); 
-console.log(message);
+// console.log(message);
 
 const leaderNames = ["Rick", "Daryl", "Michonne"];
-
 function welcomeLeader(name) {
   return "Welcome, " + name;
 }
+// console.log(welcomeLeader(leaderNames[0])); 
 
-console.log(welcomeLeader(leaderNames[0])); // Welcome, Rick
+leaderNames.forEach(function(name) {
+  console.log(welcomeLeader(name));
+});
