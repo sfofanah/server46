@@ -116,3 +116,4 @@ function welcomeLeader(name) {
 leaderNames.forEach(function(name) {
   console.log(welcomeLeader(name));
 });
+
