@@ -100,3 +100,9 @@ function greetLeader(name) {
   console.log("welcome, " + name);
 }
 greetLeader("Rick");
+
+function createLeaderMessage(name, role) {
+  return name + " is our " + role;
+}
+const message = createLeaderMessage("Rick", "leader"); 
+console.log(message);
