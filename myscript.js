@@ -127,3 +127,13 @@ names.forEach(function(name) {
   li.textContent = name;
   unorderedList.appendChild(li);
 })
+
+function createListItem(name) {
+  const li = document.createElement("li");
+  li.textContent = name;
+  return li;
+} 
+
+console.log(createListItem("Rick"));
+console.log(createListItem("Daryl"));
+console.log(createListItem("Michonne"));
