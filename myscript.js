@@ -113,7 +113,13 @@ function welcomeLeader(name) {
 }
 // console.log(welcomeLeader(leaderNames[0])); 
 
+/*
 leaderNames.forEach(function(name) {
   console.log(welcomeLeader(name));
 });
 
+*/
+
+const names = ["A", "B", "C"];
+
+const unorderedList = document.getElementById("names-list");
