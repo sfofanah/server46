@@ -121,5 +121,7 @@ leaderNames.forEach(function(name) {
 */
 
 const names = ["A", "B", "C"];
-
 const unorderedList = document.getElementById("names-list");
+names.forEach(function(name) {
+  const li = document.createElement("li");
+})
